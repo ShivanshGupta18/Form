@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="registrationform">
+        <h1>Corona Registration Form</h1>
+        <div class="main">
+            <form id="test">
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input type="text" id="firstname" required name="firstname"><br>
+                    <label id="firstlabel">First Name</label>
+                    <input type="text" id="lastname" required name="lastname"><br>
+                    <label id="lastlabel">Last Name</label>
+                </div>
+                <h2 class="name">Profession</h2>
+                <input type="text" id="profession" name="profession" placeholder="Student/Doctor/Teacher">
+                <h2 class="name">E-mail</h2>
+                <input type="email" name="email" id="email" required name="email">
+                <h2 class="name">Date of birth</h2>
+                <input type="date" name="date" id="date" required name="date">
+                <h2 class="name">Mobile number</h2>
+                <input type="text" name="phone" id="phone" required name="phone">
+                <h2 class="name">State</h2>
+                <select name="state" id="state">
+                    <option disabled="disabled" required selected="selected">Choose</option>
+                    <option>New Delhi</option>
+                    <option>Uttarakhand</option>
+                    <option>Haryana</option>
+                    <option>Himmachal Pradesh</option>
+                    <option>Uttar Pradesh</option>
+                </select>
+                <h2 id="travel">Have you travelled to a covid affected country last month?</h2>
+                <div id="travel">
+                    <input type="radio" name="option" value="yes">Yes
+                    <input type="radio" name="option" value="no">No
+                </div>
+                <h2 id="symptoms">If yes then what symptoms do you have?</h2>
+                <div class="symptoms">
+                    <input type="checkbox" name="symptoms" id="c1" value="Fever">
+                    <label for="c1">Fever</label><br>
+                    <input type="checkbox" name="symptoms" id="c2" value="cough">
+                    <label for="c2">Cough</label><br>
+                    <input type="checkbox" name="symptoms" id="c3" value="breath">
+                    <label for="c3">Breathing Problem</label><br>
+                    <input type="checkbox" name="symptoms" id="c4" value="ache">
+                    <label for="c4">Body/Head ache</label><br>
+                </div>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
